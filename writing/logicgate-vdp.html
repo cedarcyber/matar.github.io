@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsible Security and Responsible Disclosure: Why a VDP Matters | Anthony Matar</title>
+    <meta
+      name="description"
+      content="A Vulnerability Disclosure Program (VDP) gives external security researchers a clear path to report vulnerabilities — and why that matters for any mature security program."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../writing.css" />
+  </head>
+  <body>
+    <header class="article-nav">
+      <div class="container">
+        <a href="../index.html" class="back-link">← Anthony Matar</a>
+      </div>
+    </header>
+
+    <main class="container article-main">
+      <article class="article-body">
+        <header class="article-header">
+          <div class="article-meta">
+            <span class="article-date">2021</span>
+            <span class="article-sep">·</span>
+            <a
+              href="https://www.logicgate.com/blog/responsible-security-and-responsible-disclosure-why-a-vdp-matters/"
+              class="article-source"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Originally published on LogicGate</a>
+          </div>
+          <h1 class="article-title">Responsible Security and Responsible Disclosure: Why a VDP Matters</h1>
+        </header>
+
+        <div class="article-content">
+          <p>
+            Tomorrow is the first day of third grade. With nervous excitement, you're organizing all of your elementary school supplies: pencils, glue, scented markers…and the oh-so essential personality-matching lunchbox! As if it's second nature, you take out your permanent marker and start scribbling your name and landline phone number on your things. You have no intention of losing your school gear, but a still MIA pencil bag from last year has left you taking no chances. Look out, third grade!
+          </p>
+
+          <p>
+            Ok, that's not what you came here for. You might not have thought that I could tie this unsolicited nostalgia to a Vulnerability Disclosure Program (VDP), but here we are. A VDP—often referred to as a responsible disclosure program—is similar to writing your name and phone number on your classic school-yard items. It helps others do the right thing by knowing who to call when something has gone awry. However, only one of these concepts is vital for a mature risk program (hint: it's not the labeled lunchbox).
+          </p>
+
+          <h2>What's a VDP?</h2>
+
+          <p>
+            A VDP is a publicly available policy that provides clear guidelines to external security researchers (i.e., ethical hackers) or any given citizen of the world to share vulnerabilities that have been identified for an organization. The existence of the VDP makes it easy for a security researcher to get in contact with an organization to alert them to the vulnerability so that the organization can prioritize and address the security issue. No organization has perfect security, so a VDP serves as one layer of many in a mature vulnerability management program. In recognition of this reality, LogicGate has launched the LogicGate Vulnerability Disclosure Program.
+          </p>
+
+          <h2>Why a VDP? Isn't it Overkill?</h2>
+
+          <p>
+            Imagine the following scenario: a good-faith security researcher (think "good hacker") finds out that there is an unexploited vulnerability on your customer-facing SaaS product that could impact the privacy of your users. The security researchers want to do the right thing and share this information so that you can take the steps to ensure your users' privacy is protected. A series of questions arise in this situation:
+          </p>
+
+          <ul>
+            <li>How can the researcher contact your organization?</li>
+            <li>Who does the researcher contact?</li>
+            <li>How does the researcher know their message has been received?</li>
+            <li>How soon will your organization triage and remediate the issue?</li>
+            <li>What happens if the researcher isn't satisfied with your organization's response?</li>
+          </ul>
+
+          <p>
+            A vulnerability that could expose the privacy of your customer's information is a BIG DEAL. For both you and your customers. Your organization has every interest in handling the issue and making things right. You will also have to navigate with your legal and public relations teams what your obligations are with sharing this information with your customers.
+          </p>
+
+          <p>
+            The thing is, security researchers work by a set of motivations that are different from the "bad actor" hackers, oftentimes out of a sense of duty to the public good. If friction occurs in their ability to feel heard and be taken seriously by your organization (say, a security researcher doesn't even know where to report in the first place), they may feel inclined to share the vulnerability in a less than desirable manner. For instance, they may post information about the vulnerability on Twitter or in a hacker forum to make the noise necessary to be heard. In these scenarios, your organization has lost control on a multitude of levels (e.g., the media knows before your customers) making a bad situation much worse.
+          </p>
+
+          <p>
+            A strong VDP sets the ground rules for how your organization will ingest and handle reported vulnerabilities (who to call when the stray school supply is found!). Even better though, it sets up a sort of dual-sided accountability in that the researchers are subject to certain expectations (e.g., agreeing to not disclose over social media) by agreeing to your VDP policy. In turn, researchers are provided a level of legal protection (i.e., "we won't sue you for disclosing this").
+          </p>
+
+          <p>
+            The old adage in security is "it's not if, but when" in terms of facing a security incident. Simply pasting a security email on your organization's web page to be contacted is an okay start, but it may not sufficiently handle the type of scenario outlined above. Fortunately, a VDP is a "low hanging fruit" control in that it can be implemented with relatively low investment and the potential for big gains.
+          </p>
+
+          <h2>How Do I Get Started?</h2>
+
+          <p>
+            To get started with your own organization's VDP, you will want to consider these high-level elements for the policy:
+          </p>
+
+          <ul>
+            <li>What does your organization commit to?</li>
+            <li>What should the security researcher commit to?</li>
+            <li>How does the security researcher know they are protected legally (e.g., Safe Harbor)?</li>
+            <li>What is the general scope of services that they can disclose vulnerabilities about?</li>
+          </ul>
+
+          <p>
+            Building a VDP will be a joint effort between your organization's InfoSec, Engineering, and Legal teams. There are ample resources available for how to launch a standard VDP, these two are of honorable mention:
+          </p>
+
+          <ul>
+            <li><a href="https://bughunters.google.com/about/rules/6625378258649088" target="_blank" rel="noopener noreferrer">Google Developers VDP Guide</a></li>
+            <li><a href="https://disclose.io/" target="_blank" rel="noopener noreferrer">Disclose.io Project</a></li>
+          </ul>
+
+          <h2>Be Responsible!</h2>
+
+          <p>
+            Managing your organization's security is an ever-evolving process. Although a singular control can't provide comprehensive security, layers of controls working in conjunction with one another can make a program "greater than the sum of its parts". The implementation of a VDP is just one of many controls that can strengthen a security program and defend against the unexpected. In the same way that a lost backpack can be returned thanks to a "Please call this number…" note, an effective VDP makes it easier for external parties to let your organization know something is not how it ought to be.
+          </p>
+        </div>
+
+        <footer class="article-footer">
+          <a
+            href="https://www.logicgate.com/blog/responsible-security-and-responsible-disclosure-why-a-vdp-matters/"
+            class="button secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View original post →</a>
+          <a href="../index.html#writing" class="button secondary">← Back to Writing</a>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="container footer">
+      <p>&copy; <span id="year"></span> Anthony Matar</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
