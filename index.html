@@ -280,7 +280,7 @@
             data-quote="Productivity with enterprise security controls"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_0365_logo.svg/512px-Microsoft_Office_0365_logo.svg.png"
+              src="https://www.n3t.com/hubfs/logo_O365.png"
               alt="Microsoft 365 logo"
             />
           </div>
@@ -317,10 +317,10 @@
           <div
             class="logo-tile"
             data-name="Proofpoint"
-            data-quote="Email is still the #1 attack vector"
+            data-quote="all hail the pod"
           >
             <img
-              src="https://www.proofpoint.com/sites/default/files/logo-proofpoint-blue.svg"
+              src="https://media.licdn.com/dms/image/v2/D4E0BAQFEzwJn3C-nDQ/company-logo_200_200/company-logo_200_200/0/1726764831463/proofpoint_logo?e=2147483647&v=beta&t=aStCpDbDFQICbN9BUt0d1yiPC2JKrPbtDYfj8bIspj0"
               alt="Proofpoint logo"
             />
           </div>
@@ -366,12 +366,12 @@
           </div>
           <div
             class="logo-tile"
-            data-name="Workato"
-            data-quote="Automate your security workflows"
+            data-name="Island"
+            data-quote="something not working? DEPLOY CHANGES"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Workato_logo.svg/512px-Workato_logo.svg.png"
-              alt="Workato logo"
+              src="https://mms.businesswire.com/media/20220201005253/en/1344571/5/Logo_Vertical_for_White_BG.jpg?download=1"
+              alt="Island logo"
             />
           </div>
           <div
@@ -526,10 +526,11 @@
 
     <script>
       // On page load/refresh, always start at the top and strip any hash from the URL
+      history.scrollRestoration = "manual";
       if (window.location.hash) {
         history.replaceState(null, "", window.location.pathname + window.location.search);
       }
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
 
       document.getElementById("year").textContent = new Date().getFullYear();
 
