@@ -14,17 +14,6 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <nav class="site-nav" id="site-nav">
-      <div class="container nav-inner">
-        <a href="#about" class="nav-link" data-section="about">Security Leadership &amp; Engineering</a>
-        <a href="#tools" class="nav-link" data-section="tools">Things I Do</a>
-        <a href="#tool-logos" class="nav-link" data-section="tool-logos">Tech I Use</a>
-        <a href="#standards-logos" class="nav-link" data-section="standards-logos">Standards &amp; Regulations</a>
-        <a href="#writing" class="nav-link" data-section="writing">Writing &amp; Talks</a>
-        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-        <a href="https://www.linkedin.com/in/anthonymatar/" class="nav-link nav-link-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-      </div>
-    </nav>
     <header class="hero">
       <div class="container">
         <p class="kicker">hello world</p>
@@ -44,12 +33,18 @@
             />
           </figure>
         </div>
+        <div class="actions">
+          <a href="https://www.linkedin.com/in/anthonymatar/" class="button primary"
+            >LinkedIn</a
+          >
+          <a href="#tool-logos" class="button secondary">View Tool Stack</a>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section id="about" class="card">
-        <h2>Security Leadership & Engineering</h2>
+        <h2>README</h2>
         <p>I lead security programs and stay in the work across operations, identity, cloud, application security, and GRC. Player-coach by nature, with a focus on risk reduction and business enablement.​​​​​​​​​​​​​​​​
           
         </p>
@@ -275,12 +270,12 @@
           </div>
           <div
             class="logo-tile"
-            data-name="Microsoft"
-            data-quote="What was that license again?"
+            data-name="Microsoft 365"
+            data-quote="Productivity with enterprise security controls"
           >
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5esEPTEFdS7SMPW7BgzqACkbhBtztNm9pcF1O5QEOA&s"
-              alt="Microsoft logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_0365_logo.svg/512px-Microsoft_Office_0365_logo.svg.png"
+              alt="Microsoft 365 logo"
             />
           </div>
           <div
@@ -316,10 +311,10 @@
           <div
             class="logo-tile"
             data-name="Proofpoint"
-            data-quote="All hail the pod"
+            data-quote="Email is still the #1 attack vector"
           >
             <img
-              src="https://backoffice.vendr.com/public-assets/logos/1742568710174/instrumentslogo10462749.png"
+              src="https://www.proofpoint.com/sites/default/files/logo-proofpoint-blue.svg"
               alt="Proofpoint logo"
             />
           </div>
@@ -397,7 +392,7 @@
       </section>
 
       <section id="standards-logos" class="card">
-        <h2>📜 Standards & Regulations Logos</h2>
+        <h2>📜 standards/regs I speak</h2>
         <p class="section-note">
           Hover any logo to see the standard name and a quick take.
         </p>
@@ -525,36 +520,6 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Active nav link highlighting as user scrolls
-      (function () {
-        var navLinks = document.querySelectorAll(".nav-link[data-section]");
-        var currentActive = null;
-
-        function setActive(id) {
-          if (currentActive === id) return;
-          currentActive = id;
-          navLinks.forEach(function (link) {
-            link.classList.toggle("nav-active", link.dataset.section === id);
-          });
-        }
-
-        var sectionObserver = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                setActive(entry.target.id);
-              }
-            });
-          },
-          { rootMargin: "-10% 0px -65% 0px", threshold: 0 }
-        );
-
-        navLinks.forEach(function (link) {
-          var section = document.getElementById(link.dataset.section);
-          if (section) sectionObserver.observe(section);
-        });
-      })();
 
       // Scroll fade-up animations
       const observer = new IntersectionObserver(
